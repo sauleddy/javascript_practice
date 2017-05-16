@@ -10,7 +10,7 @@ class async_promise extends async_base {
 	read_file(file_name) {
 		let func_read_file = super.read_file;
 		return new Promise(function (resolve, reject) {
-    	func_read_file(file_name, function(error, data) {
+			func_read_file(file_name, function(error, data) {
     		if (error) reject(error);
     		resolve(data);
     	});

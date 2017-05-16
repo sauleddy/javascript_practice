@@ -1,0 +1,16 @@
+{
+  "name": "async",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "sleep": "^5.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony-async-await ./main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,6 +1,7 @@
 'use strict'
 
 let fs = require('fs');
+let sleep = require('sleep');
 
 class async_base {
 	constructor() {
@@ -8,7 +9,8 @@ class async_base {
 	}
 
 	read_file(file_name, cbk) {
-		fs.readFile(file_name, function(error, data) {
+		//sleep.sleep(3);
+    fs.readFile(file_name, function(error, data) {
       cbk(error, data)
     });
 	}
